@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='public/vendor/bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Aventureros Digitales</h1>
+
+        <h2 class="text-center">"Porque nuesta pasion es programar"</h2>
+
+        <article class="text-center">Registro al club de aventureros digitales</article>
+    </header>
+
+    <br>
+
+    <nav>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Actividades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contactos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Acerca de nosotros</a>
+            </li>
+            </ul>
+    </nav>
+
+    <main>
+        <form method="get" action="server.html" class="text-center">
+            <fieldset>
+                
+            </fieldset>
+            <div class="mb-3 row">
+                <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Nombres Completos:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ejemplo: Gabriel Molina" required minlength="10" maxlength="70" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ]+">
+                </div>
+            </div>  
+            
+            <div class="mb-3 row">
+                <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                </div>
+            </div>  
+
+            <div class="mb-3 row">
+                <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Contraseña:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" required minlength="8" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}">
+                </div>
+                <small>La contraseña debe contener: Al menos una mayúscula, una minúscula, un número y un símbolo</small>
+            </div>  
+
+            <div class="mb-3 row">
+                <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Confirme contraseña:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" required minlength="8" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&]).{8,}">
+                </div>
+                <small>La contraseña debe contener: Al menos una mayúscula, una minúscula, un número y un símbolo</small>
+            </div>  
+
+            <div class="mb-3 row">
+                <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Edad:</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="edad" required min="10" max="100">
+                </div>
+            </div>   
+
+            <div class="mb-3 row">
+                <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Pais: </label>
+                <div class="col-sm-10">
+                    <select class="form-select" aria-label="Default select example">
+                    <option selected disabled>elija una opcion:</option>
+                        <option value="1">Ecuador</option>
+                        <option value="2">Peru</option>
+                        <option value="3">Bolivia</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Genero: </label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">hombre</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">mujer</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">otro</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Acepte los terminos y condiciones: </label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1"></label>
+                </div>
+            </div> 
+            
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary" type="reset" value="Reset" >  
+        </form>
+    </main>
+
+    <aside>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p><strong>Beneficios de unirte a nuestro club</strong> </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                <ul>
+                    <li>
+                        apoyo en todo momento por parte de nuestro equipo
+                    </li>
+                    <li>acompañamiento en todo momento </li>
+                    <li>revisi'on en conjunto de proyectos</li>
+                    <li>adevertencias de trabajos o practicas</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+
+    <footer>
+        <figure>
+        <blockquote class="blockquote">
+            <p>Gabriel Anthony Molina Gallegos</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            Estuddiante de la carrera de Ingeniera en Software <cite title="Source Title">NRC: 27811</cite>
+        </figcaption>
+        </figure>
+    </footer>
+</body>
+</html>
